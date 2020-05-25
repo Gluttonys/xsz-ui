@@ -1,0 +1,57 @@
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 16px "宋体", "Arial Narrow", HELVETICA;
+    /*background: #918c8f;*/
+    -webkit-text-size-adjust: 100%
+}
+
+a {
+    color: #172c45;
+    text-decoration: none
+}
+
+a:hover {
+    color: #cd0200;
+    text-decoration: underline
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+
+
+/* 滚动条设置 */
+.scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background: linear-gradient(to bottom, rgba(160, 121, 211, 0.6), rgba(93, 147, 118, 0.6));
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 3px;
+    background-color: #b66172;
+}
