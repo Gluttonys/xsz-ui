@@ -4,9 +4,6 @@
             <i class="fa" :class="iconstart" aria-hidden="true"></i>
         </div>
 
-
-        <!---->
-
         <input :type="showpass ? (passwordVisible ? 'text' : 'password') : type"
                :placeholder="placeholder"
                :style="{gridColumn: `${width_start}/3`}"
@@ -18,7 +15,6 @@
                :value="value"
                :name="name"
                :disabled="disabled"/>
-
 
         <div class="showpass"
              v-if="showpass && value"

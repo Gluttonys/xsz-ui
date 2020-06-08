@@ -5,7 +5,6 @@ body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend,
 
 body {
     font: 16px "宋体", "Arial Narrow", HELVETICA;
-    /*background: #918c8f;*/
     -webkit-text-size-adjust: 100%
 }
 
@@ -39,7 +38,7 @@ table {
 
 p {
     word-wrap: break-word
-}
+} 
 
 
 /* 滚动条设置 */

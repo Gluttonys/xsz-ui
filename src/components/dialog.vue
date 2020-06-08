@@ -1,6 +1,6 @@
 <template>
 
-    <transition name="dialog">
+    <transition name="dialog" enter-class="enter-xsz" appear-class="appear-xsz">
         <div class="dialog-wrapper" v-show="visible" @click.self="repeatedly">
             <div class="dialog scrollbar" :class="[place, width]">
                 <div class="title">
