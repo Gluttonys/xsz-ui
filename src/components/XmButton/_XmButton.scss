@@ -1,0 +1,195 @@
+.XmButton {
+  display:       inline-block;
+  min-width:     1em;
+  line-height:   2em;
+  padding:       0 1em;
+  margin:        0 .5em;
+  border-width:  1px;
+  border-style:  solid;
+  border-color:  $edge;
+  border-radius: 3px;
+  cursor:        pointer;
+  user-select:   none;
+  transition:    .3s;
+  color:         $font-default-color;
+
+  .fa + .content {
+    margin-left: .3em;
+  }
+
+}
+
+.default-type {
+  &:hover {
+    color:            $primary;
+    background-color: lighten($primary, 30%);
+    border-color:     lighten($primary, 15%);
+  }
+}
+
+.primary {
+  color:            $font-in-color;
+  background-color: $primary;
+  border-color:     $primary;
+
+  &:hover {
+    background-color: lighten($primary, 10%);
+    border-color:     lighten($primary, 10%);
+  }
+}
+
+.success {
+  color:            $font-in-color;
+  background-color: $success;
+  border-color:     $success;
+
+  &:hover {
+    background-color: lighten($success, 10%);
+    border-color:     lighten($success, 10%);
+  }
+}
+
+.info {
+  color:            $font-in-color;
+  background-color: $info;
+  border-color:     $info;
+
+  &:hover {
+    background-color: lighten($info, 10%);
+    border-color:     lighten($info, 10%);
+  }
+}
+
+.warning {
+  color:            $font-in-color;
+  background-color: $warning;
+  border-color:     $warning;
+
+  &:hover {
+    background-color: lighten($warning, 10%);
+    border-color:     lighten($warning, 10%);
+  }
+}
+
+.danger {
+  color:            $font-in-color;
+  background-color: $danger;
+  border-color:     $danger;
+
+  &:hover {
+    background-color: lighten($danger, 10%);
+    border-color:     lighten($danger, 10%);
+  }
+}
+
+.plain {
+  transition: none;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.primary.plain {
+  color:            $primary;
+  border-color:     $primary;
+  background-color: lighten($primary, 30%);
+
+  &:hover {
+    background-color: $primary;
+    border-color:     $primary;
+    color:            $font-in-color;
+  }
+}
+
+.success.plain {
+  color:            $success;
+  border-color:     $success;
+  background-color: lighten($success, 30%);
+
+  &:hover {
+    background-color: $success;
+    border-color:     $success;
+    color:            $font-in-color;
+  }
+}
+
+.info.plain {
+  color:            $info;
+  border-color:     $info;
+  background-color: lighten($info, 30%);
+
+  &:hover {
+    background-color: $info;
+    border-color:     $info;
+    color:            $font-in-color;
+  }
+}
+
+.warning.plain {
+  color:            $warning;
+  border-color:     $warning;
+  background-color: lighten($warning, 30%);
+
+  &:hover {
+    background-color: $warning;
+    border-color:     $warning;
+    color:            $font-in-color;
+  }
+}
+
+.danger.plain {
+  color:            $danger;
+  border-color:     $danger;
+  background-color: lighten($danger, 30%);
+
+  &:hover {
+    background-color: $danger;
+    border-color:     $danger;
+    color:            $font-in-color;
+  }
+}
+
+.round {
+  border-radius: 1em;
+}
+
+.circle {
+  width: .7em;
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 0 .8em;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+
+  i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+.disabled {
+  // 禁用鼠标事件
+  pointer-events: none;  // IE 9 不支持该属性
+  opacity: 0.5;
+
+}
+
+.medium {
+  line-height: 1.7em;
+  padding: 0 .4em;
+}
+
+.small {
+  font-size: $standard * 0.9;
+  padding: 0 .4em;
+}
+
+.mini {
+  font-size: $standard * 0.8;
+  padding: 0 .4em;
+}

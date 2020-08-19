@@ -1,0 +1,51 @@
+.XmSwitch--Wrapper {
+  display: inline-block;
+  margin:  0 .5em;
+  color: $font-default-color;
+
+  span {
+    user-select: none;
+    font-weight: 600;
+  }
+
+}
+
+.XmSwitch {
+  position:      relative;
+  display:       inline-block;
+  margin:        0 .5em;
+  transform:     translateY(.25em);
+  width:         40px;
+  height:        20px;
+  border-radius: 10px;
+  cursor:        pointer;
+  overflow:      hidden;
+
+  .circle {
+    transition:    .3s;
+    position:      absolute;
+    top:           1px;
+    left:          21px;
+    height:        18px;
+    width:         18px;
+    border-radius: 50%;
+    //background-color: $font-in-color;
+  }
+
+  label {
+    position: absolute;
+    top:      0;
+    left:     0;
+
+    input {
+      width:  0;
+      height: 0;
+    }
+  }
+
+}
+
+.disabled {
+  pointer-events: none;
+  opacity:        .6;
+}

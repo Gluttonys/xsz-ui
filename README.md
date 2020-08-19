@@ -1,19 +1,26 @@
-# xsz-ui
+# 全局约定
 
-## Project setup
-```
-npm install
-```
+- 组件文件夹大驼峰命令
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- 组件名大驼峰命名
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- 样式层级不能超过 4 级
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 针对不同分辨率显示器做适配
+
+  ```css
+  @media screen and (min-width:1200px)
+  
+  @media screen and (min-width:992px)
+  
+  @media screen and (min-width:768px)
+  
+  @media screen and (min-width:480px)
+  ```
+
+  
+
+  
+
+  
+
