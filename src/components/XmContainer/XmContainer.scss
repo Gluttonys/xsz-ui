@@ -1,0 +1,41 @@
+.xm-container {
+  padding: .5em;
+  box-sizing: border-box;
+
+  .container__title {
+    padding: .5em .3em;
+    font-size: 1.2em;
+  }
+
+  .line {
+    width:            100%;
+    height:           1px;
+    background-color: #ece9e9;
+    margin:           0 auto .3em;
+  }
+
+  .real {
+    display:    grid;
+    min-height: 40px;
+    //border:     1px solid #c2bcbc;
+  }
+
+  .center {
+    justify-content: center;
+    align-items:     center;
+  }
+
+  .XCenter {
+    justify-content: center;
+  }
+
+  .YCenter {
+    align-items: center;
+  }
+
+}
+
+.border {
+  border: 1px solid #d8d6d6;
+  border-radius: 10px;
+}

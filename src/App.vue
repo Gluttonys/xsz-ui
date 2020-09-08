@@ -1,15 +1,80 @@
 <template>
   <div id="app">
+<!--    :right-icon-src="require('./assets/img/test.png')"-->
+<!--    <xm-input prefix-icon="fa-bars" suffix-icon="fa-calendar-check-o"></xm-input>-->
+    <xm-input-header
+      :left-icon-src="require('./assets/img/test.png')"
+      :input-icon="require('./assets/img/test.png')"
+      :right-icon-src="require('./assets/img/test.png')"
+      input-place-holder="hello world"
+    >
 
+    </xm-input-header>
 
+    <xm-image-block
+        :img-path="require('./assets/img/test.png')"
+        @imgClick="a"
+    >
+      <xm-button>按钮</xm-button>
+      <xm-button>按钮</xm-button>
+      <xm-button>按钮</xm-button>
+    </xm-image-block>
 
+    <xm-container :col="3">
+      <xm-image-block
+          :img-path="require('./assets/img/test.png')"
+          @imgClick="a"
+      >
+        <xm-button>按钮</xm-button>
+        <xm-button>按钮</xm-button>
+        <xm-button>按钮</xm-button>
+      </xm-image-block>
+      <xm-image-block
+          :img-path="require('./assets/img/test.png')"
+          @imgClick="a"
+      >
+        <xm-button>按钮</xm-button>
+        <xm-button>按钮</xm-button>
+        <xm-button>按钮</xm-button>
+      </xm-image-block>
+      <xm-image-block
+          :img-path="require('./assets/img/test.png')"
+          @imgClick="a"
+      >
+        <xm-button>按钮</xm-button>
+        <xm-button>按钮</xm-button>
+        <xm-button>按钮</xm-button>
+      </xm-image-block>
+    </xm-container>
 
-
-    <!--
-
-                    下面是旧的
-
-     -->
+    <xm-container :col="5" title="我得服务" line border>
+      <xm-image-block
+          :img-path="require('./assets/img/test.png')"
+          @imgClick="a"
+      >
+      </xm-image-block>
+      <xm-image-block
+          :img-path="require('./assets/img/test.png')"
+          @imgClick="a"
+      >
+      </xm-image-block>
+      <xm-image-block
+          :img-path="require('./assets/img/test.png')"
+          @imgClick="a"
+      >
+      </xm-image-block>
+      <xm-image-block
+          :img-path="require('./assets/img/test.png')"
+          @imgClick="a"
+      >
+      </xm-image-block>
+      <xm-image-block
+          :img-path="require('./assets/img/test.png')"
+          @imgClick="a"
+      >
+      </xm-image-block>
+    </xm-container>
+    <!-- 下面是旧的 -->
 
 
     <!--    <div class="row">-->
@@ -76,165 +141,6 @@
     <!--          <td></td>-->
     <!--        </tr>-->
     <!--      </table>-->
-    <!--    </div>-->
-
-    <!--    <div class="row">-->
-    <!--      <table border="2">-->
-    <!--        <caption>CheckBoxGroup 多选框组</caption>-->
-    <!--        <tr>-->
-    <!--          <td>参数名</td>-->
-    <!--          <td>值类型</td>-->
-    <!--          <td>默认值</td>-->
-    <!--          <td>举例</td>-->
-    <!--          <td>实例</td>-->
-    <!--          <td>描述</td>-->
-    <!--          <td>代码</td>-->
-    <!--        </tr>-->
-    <!--        <tr>-->
-    <!--          <td>v-model</td>-->
-    <!--          <td>Array</td>-->
-    <!--          <td>null</td>-->
-    <!--          <td>-->
-    <!--            fruits : {{fruits}}-->
-    <!--          </td>-->
-    <!--          <td>-->
-    <!--            <xsz-checkbox-group v-model="fruits">-->
-    <!--              <xsz-checkbox label="苹果"></xsz-checkbox>-->
-    <!--              <xsz-checkbox label="香蕉"></xsz-checkbox>-->
-    <!--              <xsz-checkbox label="草莓"></xsz-checkbox>-->
-    <!--            </xsz-checkbox-group>-->
-    <!--          </td>-->
-    <!--          <td>-->
-    <!--            如果有多个多选项， 则可以省略每一个项中的v-model。-->
-    <!--            在 CheckboxGroup组中添加一个整体的V-model即可-->
-    <!--            <br>-->
-    <!--            此种情况下， v-model必须绑定一个数组， 而不再是一个Boolean值-->
-    <!--            <br>-->
-    <!--            此选项是必须的-->
-    <!--          </td>-->
-    <!--          <td>-->
-    <!--            <textarea readonly>-->
-    <!--              <xsz-checkbox-group v-model="fruits">-->
-    <!--                <xsz-checkbox label="苹果"></xsz-checkbox>-->
-    <!--                <xsz-checkbox label="香蕉"></xsz-checkbox>-->
-    <!--                <xsz-checkbox label="草莓"></xsz-checkbox>-->
-    <!--              </xsz-checkbox-group>-->
-    <!--            </textarea>-->
-    <!--          </td>-->
-    <!--        </tr>-->
-    <!--      </table>-->
-    <!--    </div>-->
-
-
-
-    <!--    <div class="row">-->
-    <!--      <table border="2">-->
-    <!--        <caption>RadioGroup 单选框组</caption>-->
-    <!--        <tr>-->
-    <!--          <td>参数名</td>-->
-    <!--          <td>值类型</td>-->
-    <!--          <td>默认值</td>-->
-    <!--          <td>举例</td>-->
-    <!--          <td>实例</td>-->
-    <!--          <td>描述</td>-->
-    <!--          <td>代码</td>-->
-    <!--        </tr>-->
-    <!--        <tr>-->
-    <!--          <td>简化写法</td>-->
-    <!--          <td></td>-->
-    <!--          <td></td>-->
-    <!--          <td></td>-->
-    <!--          <td>-->
-    <!--            <xsz-radio-group v-model="gender">-->
-    <!--              <xsz-radio label="0">男</xsz-radio>-->
-    <!--              <xsz-radio label="1">女</xsz-radio>-->
-    <!--            </xsz-radio-group>-->
-    <!--          </td>-->
-    <!--          <td>-->
-    <!--            如果有多个单选项， 则可以省略每一个项中的v-model。-->
-    <!--            在 RadioGroup组中添加一个整体的V-model即可-->
-    <!--          </td>-->
-    <!--          <td>-->
-    <!--            <textarea readonly>-->
-    <!--              <xsz-radio-group v-model="gender">-->
-    <!--                <xsz-radio label="0">男</xsz-radio>-->
-    <!--                <xsz-radio label="1">女</xsz-radio>-->
-    <!--              </xsz-radio-group>-->
-    <!--            </textarea>-->
-    <!--          </td>-->
-    <!--        </tr>-->
-
-    <!--      </table>-->
-    <!--    </div>-->
-
-    <!--    <div class="row">-->
-    <!--      <table border="2">-->
-    <!--        <caption>Radio 单选框</caption>-->
-    <!--        <tr>-->
-    <!--          <td>参数名</td>-->
-    <!--          <td>值类型</td>-->
-    <!--          <td>默认值</td>-->
-    <!--          <td>举例</td>-->
-    <!--          <td>实例</td>-->
-    <!--          <td>描述</td>-->
-    <!--          <td>代码</td>-->
-    <!--        </tr>-->
-    <!--        <tr>-->
-    <!--          <td>v-model</td>-->
-    <!--          <td>variable</td>-->
-    <!--          <td>null</td>-->
-    <!--          <td>v-model="gender"</td>-->
-    <!--          <td>-->
-    <!--            <xsz-radio label="0" v-model="gender">男</xsz-radio>-->
-    <!--            <xsz-radio label="1" v-model="gender">女</xsz-radio>-->
-    <!--          </td>-->
-    <!--          <td>用于捆绑一个radio组, 这个值是必须的</td>-->
-    <!--          <td>-->
-    <!--            <textarea readonly>-->
-    <!--              <xsz-radio label="0" v-model="gender">男</xsz-radio>-->
-    <!--              <xsz-radio label="1" v-model="gender">女</xsz-radio>-->
-    <!--            </textarea>-->
-    <!--          </td>-->
-    <!--        </tr>-->
-    <!--        <tr>-->
-    <!--          <td>label</td>-->
-    <!--          <td>[String, Number, Boolean]</td>-->
-    <!--          <td>""</td>-->
-    <!--          <td>label="0"</td>-->
-    <!--          <td>-->
-    <!--            <xsz-radio label="0" v-model="gender">男</xsz-radio>-->
-    <!--            <xsz-radio label="1" v-model="gender">女</xsz-radio>-->
-    <!--          </td>-->
-    <!--          <td>-->
-    <!--            用于确定单选框的返回值。如果没有content区， 则label自动填充content-->
-    <!--            <br>-->
-    <!--            这个值是必须的-->
-    <!--          </td>-->
-    <!--          <td>-->
-    <!--            <textarea readonly>-->
-    <!--              <xsz-radio label="0" v-model="gender">男</xsz-radio>-->
-    <!--              <xsz-radio label="1" v-model="gender">女</xsz-radio>-->
-    <!--            </textarea>-->
-    <!--          </td>-->
-    <!--        </tr>-->
-    <!--        <tr>-->
-    <!--          <td>name</td>-->
-    <!--          <td>String</td>-->
-    <!--          <td>""</td>-->
-    <!--          <td>name="gender"</td>-->
-    <!--          <td>-->
-    <!--            <xsz-radio name="man" label="0" v-model="gender">男</xsz-radio>-->
-    <!--          </td>-->
-    <!--          <td>用于确定具体某个form组件的名字， 便于get获取</td>-->
-    <!--          <td>-->
-    <!--            <textarea readonly>-->
-    <!--              <xsz-radio name="gender" label="0" v-model="gender">男</xsz-radio>-->
-    <!--            </textarea>-->
-    <!--          </td>-->
-    <!--        </tr>-->
-    <!--      </table>-->
-
-
     <!--    </div>-->
 
 
@@ -393,7 +299,10 @@
   </div>
 </template>
 <script>
+import XmRadioGroup from '@/components/XmRadioGroup/XmRadioGroup'
+
 export default {
+  components: {XmRadioGroup},
   data() {
     return {
       // 单选框绑定的值
@@ -402,36 +311,14 @@ export default {
       apple: false,
       // 多选框组
       fruits: ['西瓜', '香蕉'],
-      content: '这是内容'
+      content: '这是内容',
+
+      gender: 'male',
 
       // 旧的
       // // 模态框需要一个指定数据 visible
-      // dialog1: false,
-      // dialog2: false,
-      // dialog3: false,
-      // dialog4: false,
-      // dialog5: false,
-      // dialog6: false,
-      // dialog7: false,
-      // dialog8: false,
-      // dialog9: false,
-      // // input框的值
-      // username: "",
-      // password: "",
-      // query: "",
-      // // switch
-      // active: true,
-      // active1: true,
-      // active2: true,
-      // active3: true,
-      // // 按钮的单机事件
-      // age: 0,
-      // // radio
-      // gender: "1",
-      // // 多选框 同意
-      // agree: false,
-      // // 多选框， 水果选择
-      // fruits: ["苹果"],
+      dialog1: true,
+
       // // form表单， 绑定一个对象，收集各个表单元素的值
       // model: {
       //   playerName: "Gluttony",
@@ -446,44 +333,13 @@ export default {
   //   }, 4000)
   // },
   methods: {
-    handleClick() {
-      console.log('hello')
-    },
-    // 处理开关change事件
-    handleSwitch({eventOrigin, value}) {
-      console.log(eventOrigin)
-      console.log(value)
-    }
-
-
     // 以及一个单机事件的方法， 改变visible的值
-    // fn() {
-    //   this.dialog1 = true
-    // },
-    // fn1() {
-    //   this.dialog2 = true
-    // },
-    // fn2() {
-    //   this.dialog3 = true
-    // },
-    // fn3() {
-    //   this.dialog4 = true
-    // },
-    // fn4() {
-    //   this.dialog5 = true
-    // },
-    // fn5() {
-    //   this.dialog6 = true
-    // },
-    // fn6() {
-    //   this.dialog7 = true
-    // },
-    // fn7() {
-    //   this.dialog8 = true
-    // },
-    // fn8() {
-    //   this.dialog9 = true
-    // },
+    fn() {
+      this.dialog1 = true
+    },
+    a() {
+      console.log("hello")
+    }
     // add() {
     //   this.age++
     //   console.log(this.age)
@@ -492,3 +348,9 @@ export default {
 }
 </script>
 
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+</style>
