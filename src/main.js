@@ -18,7 +18,8 @@ import XmDialog from '@/components/XmDialog/XmDialog'
 import XmInputHeader from '@/components/XmInputHeader/XmInputHeader'
 import XmImageBlock from '@/components/XmImageBlock/XmImageBlock'
 import XmContainer from '@/components/XmContainer/XmContainer'
-
+import XmClassify from "@/components/XmClassify/XmClassify";
+import XmSteps from "@/components/XmSteps/XmSteps";
 
 // 全局注册组件
 Vue.component(XmButton.name, XmButton)
@@ -34,6 +35,8 @@ Vue.component(XmDialog.name, XmDialog)
 Vue.component(XmInputHeader.name, XmInputHeader)
 Vue.component(XmImageBlock.name, XmImageBlock)
 Vue.component(XmContainer.name, XmContainer)
+Vue.component(XmClassify.name, XmClassify)
+Vue.component(XmSteps.name, XmSteps)
 
 new Vue({
   render: h => h(App),

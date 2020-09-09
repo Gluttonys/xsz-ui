@@ -1,0 +1,57 @@
+.steps {
+  width:      100%;
+  display:    flex;
+  min-height: 120px;
+  position:   relative;
+  overflow:   hidden;
+
+  .line {
+    position:         absolute;
+    left:             7.5%;
+    top:              0;
+    height:           100%;
+    width:            1px;
+    transform:        translateX(-50%);
+    background-color: black;
+  }
+
+  .retouch {
+    width:    15%;
+    position: relative;
+
+    .circle__wrapper {
+      position:         absolute;
+      height:           24px;
+      width:            24px;
+      top:              0;
+      left:             50%;
+      transform:        translateX(-50%);
+      background-color: #a61b1b;
+      border-radius:    50%;
+      z-index:          9;
+
+      .dot {
+        position:         absolute;
+        top:              50%;
+        left:             50%;
+        height:           12px;
+        width:            12px;
+        border-radius:    50%;
+        transform:        translate(-50%, -50%);
+        background-color: #dad1d1;
+        z-index:          99;
+      }
+    }
+  }
+
+  .content {
+    box-sizing: border-box;
+    width:      85%;
+    padding:    0 12px 24px;
+
+    .title {
+      font-size:   1.2em;
+      line-height: 2em;
+    }
+  }
+}
